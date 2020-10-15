@@ -1,0 +1,13 @@
+<h2>Um pouco de service</h2>
+
+<p>Service sempre ti devolve a mesma instância o que lhe permite compartilhar valores entre componentes</p>
+
+<p>Listando e adicionando personagem do Naruto:</p>
+
+<input #campoPersonagem type="text"><button (click)="add()">Add</button>
+
+<ul>
+  <li *ngFor="let personagem of personagens">{{ personagem }}</li>
+</ul>
+
+<app-outro></app-outro>
