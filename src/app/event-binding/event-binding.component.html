@@ -1,0 +1,5 @@
+<h2>Sobre Event Binding</h2>
+<input #campoEvent (keypress)="hangleChange($event)" (blur)="handleBlur(campoEvent.value)" type="text">
+
+<p>Resultado atual: {{ atual }}</p>
+<p>Resultado salvo: {{ resultadoSalvo }}</p>

@@ -5,6 +5,7 @@ import { CommonModule } from "@angular/common";
 import { AppComponent } from './app.component';
 import { ServiceComponent } from './service/service.component';
 import { OutroComponent } from './service/outro/outro.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { OutroComponent } from './service/outro/outro.component';
     AppComponent,
     ServiceComponent,
     OutroComponent,
+    EventBindingComponent,
   ],
   imports: [
     BrowserModule,
