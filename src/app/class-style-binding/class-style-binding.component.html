@@ -1,0 +1,52 @@
+<h2>Sobre Class e Style Binding</h2>
+
+<p>Através do select é possível aplicar cores de contexto nos alerts usando property binding e interpolation na string
+</p>
+<p>E também usando style binding para exibir ou não o texto de erro</p>
+
+<p>Selection o contexto:
+  <!-- (change)="0" foi necessário para atualizar a variável local "alert" no contexto Angular-->
+  <select #alert (change)="0">
+    <option value="alert-primary">Primary</option>
+    <option value="alert-secondary">Secondary</option>
+    <option value="alert-success">Success</option>
+    <option value="alert-danger">Danger</option>
+    <option value="alert-warning">Warning</option>
+    <option value="alert-info">Info</option>
+    <option value="alert-light">Light</option>
+    <option value="alert-dark">Dark</option>
+  </select>
+</p>
+
+<br>
+
+<div class="alert {{ alert.value }}" role="alert">
+  Context receive
+</div>
+<div class="alert alert-danger" [style.display]="alert.value === 'alert-danger' ? 'block': 'none'" role="alert">
+  Error Text!
+</div>
+<div class="alert" [class.alert-primary]="alert.value === 'alert-primary'" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert" [class.alert-secondary]="alert.value === 'alert-secondary'" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert" [class.alert-success]="alert.value === 'alert-success'" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert" [class.alert-danger]="alert.value === 'alert-danger'" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert" [class.alert-warning]="alert.value === 'alert-warning'" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert" [class.alert-info]="alert.value === 'alert-info'" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert" [class.alert-light]="alert.value === 'alert-light'" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert" [class.alert-dark]="alert.value === 'alert-dark'" role="alert">
+  A simple dark alert—check it out!
+</div>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServiceComponent } from './service/service.component';
 import { OutroComponent } from './service/outro/outro.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     ServiceComponent,
     OutroComponent,
     EventBindingComponent,
+    ClassStyleBindingComponent,
   ],
   imports: [
     BrowserModule,
