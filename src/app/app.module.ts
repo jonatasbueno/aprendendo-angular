@@ -9,6 +9,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { NomeCursoComponent } from './input-property/nome-curso/nome-curso.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { ContadorComponent } from './output-property/contador/contador.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { NomeCursoComponent } from './input-property/nome-curso/nome-curso.compo
     ClassStyleBindingComponent,
     InputPropertyComponent,
     NomeCursoComponent,
+    OutputPropertyComponent,
+    ContadorComponent,
   ],
   imports: [
     BrowserModule,

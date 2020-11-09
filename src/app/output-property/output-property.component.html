@@ -1,0 +1,6 @@
+<h2>Output property</h2>
+
+<p>A cada incrementação ou decrementação é disparado um evento e esse mesmo evento é ouvido pelo componente pai
+  imprimindo o novo valor no console.log</p>
+
+<app-contador [valorInicial]="valorInicial" (valorAlterado)="imprimiValor($event)"></app-contador>
