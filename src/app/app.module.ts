@@ -7,6 +7,8 @@ import { ServiceComponent } from './service/service.component';
 import { OutroComponent } from './service/outro/outro.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { NomeCursoComponent } from './input-property/nome-curso/nome-curso.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { ClassStyleBindingComponent } from './class-style-binding/class-style-bi
     OutroComponent,
     EventBindingComponent,
     ClassStyleBindingComponent,
+    InputPropertyComponent,
+    NomeCursoComponent,
   ],
   imports: [
     BrowserModule,
